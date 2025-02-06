@@ -34,5 +34,8 @@ public class L11_Constructors {
 
         L11_Student s3 = new L11_Student(s2);
         s3.display();
+
+        System.out.println(s2.hashCode());
+        System.out.println(s3.hashCode());
     }
 }
