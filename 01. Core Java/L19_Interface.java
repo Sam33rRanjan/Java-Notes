@@ -7,7 +7,13 @@ interface L19_Base {
     void config();
 }
 
-class L19_MyClass implements L19_Base {
+interface L19_Base2 {
+    void show();
+    void display();
+}
+
+// Through interface, we can achieve multiple inheritance
+class L19_MyClass implements L19_Base, L19_Base2 {
     // If we fail to implement the methods of the interface, this class will become abstract as it contains abstract methods by inheritance
     
     public void show() {
@@ -17,13 +23,18 @@ class L19_MyClass implements L19_Base {
     public void config() {
         System.out.println("Config method");
     }
+
+    public void display() {
+        System.out.println("Display method");
+    }
 }
 
 public class L19_Interface {
     public static void main(String[] args) {
-        L19_Base b = new L19_MyClass();
+        L19_MyClass b = new L19_MyClass();
         b.show();
         b.config();
+        b.display();
         System.out.println(L19_Base.age);
     }
 }

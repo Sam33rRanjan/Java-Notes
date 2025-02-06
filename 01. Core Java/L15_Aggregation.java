@@ -31,8 +31,8 @@ public class L15_Aggregation {
         L15_Address a1 = new L15_Address("123", "Delhi", "India");
         L15_Address a2 = new L15_Address("456", "Mumbai", "India");
 
-        L15_Employee e1 = new L15_Employee(111, "Varun", a1);
-        L15_Employee e2 = new L15_Employee(222, "Rohan", a2);
+        L15_Employee e1 = new L15_Employee(1, "Varun", a1);
+        L15_Employee e2 = new L15_Employee(2, "Rohan", a2);
 
         e1.display();
         e2.display();

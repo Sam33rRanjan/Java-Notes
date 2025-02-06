@@ -2,7 +2,7 @@ class L16_Student {
     private String name;
 
     public void setName(String name) {
-        this.name = name;
+        this.name = "My name is " + name;
     }
 
     public String getName() {
