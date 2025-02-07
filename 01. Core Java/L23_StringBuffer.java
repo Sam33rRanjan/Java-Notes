@@ -1,5 +1,7 @@
 public class L23_StringBuffer {
     public static void main(String[] args) {
+        // All methods in StringBuffer are synchronized
+        
         StringBuffer name = new StringBuffer("John");
         // StringBuffer name2 = "John"; // This will throw an error
         System.out.println(name);
@@ -25,8 +27,11 @@ public class L23_StringBuffer {
         
         // System.out.println(name.delete(1, 3)); // Deletes the characters from the index 1 to the index 2
         // System.out.println(name);
+
+        // System.out.println(name.deleteCharAt(1)); // Deletes the character at the index 1
+        // System.out.println(name);
         
-        // System.out.println(name.reverse());
+        System.out.println(name.reverse());
         // System.out.println(name);
 
         // System.out.println(name.replace(1, 3, "Doe"));
@@ -37,8 +42,8 @@ public class L23_StringBuffer {
         // System.out.println(name.substring(1));
         // System.out.println(name);
 
-        System.out.println(name.subSequence(1, 3));
-        System.out.println(name);
+        // System.out.println(name.subSequence(1, 3));
+        // System.out.println(name);
 
         // System.out.println(name.indexOf("oh"));
 
@@ -46,5 +51,8 @@ public class L23_StringBuffer {
 
         // System.out.println(name.hashCode());
         
+        // name.setCharAt(0, 'K');
+        // System.out.println(name);
+
     }
 }
