@@ -21,12 +21,18 @@ public class L22_String_Methods {
         // System.out.println(name.compareToIgnoreCase("john")); // Compares the string to the specified string ignoring case considerations
         // System.out.println(name.contains("oh")); // Checks if the string contains the specified sequence of characters
         // System.out.println(name.isEmpty()); // Checks if the string is empty
-        // System.out.println(name.concat(" Doe")); // Concatenates the specified string to the end of the string
+        System.out.println(name.concat(" Doe")); // Concatenates the specified string to the end of the string
         // System.out.println(name + " Doe"); // Concatenates the specified string to the end of the string
         // System.out.println(name.length()); // Returns the length of the string
         // System.out.println(name.hashCode()); // Returns the hash code of the string 
         // System.out.println(name.toCharArray()); // Converts the string to a character array
         // System.out.println(String.valueOf(123)); // Returns the string representation of the specified value
         // System.out.println(String.valueOf(123).getClass()); // Returns the string representation of the specified value
+        
+        // name = name.concat(" Doe");
+        // String[] words=name.split(" ");
+        // for(String word:words){
+        //     System.out.println(word);
+        // }
     }
 }
