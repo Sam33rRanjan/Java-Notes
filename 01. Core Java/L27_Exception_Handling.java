@@ -102,7 +102,7 @@ public class L27_Exception_Handling {
 // Checked/Compiled time exceptions example: IOException, SQLException
 // Unchecked/Runtime exceptions example: ArithmeticException, NullPointerException, ArrayIndexOutOfBoundsException, NumberFormatException
 
-class L27_MyException extends Throwable {
+class L27_MyException extends Exception {
     String str;
     L27_MyException(String s) {
         str = s;
