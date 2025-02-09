@@ -67,7 +67,7 @@ public class L27_Exception_Handling {
         try {
             throwException();
         } catch (L27_MyException e) {
-            System.out.println(e.getMessage());
+            System.out.println(e);
         }
     }
 
@@ -102,9 +102,14 @@ public class L27_Exception_Handling {
 // Checked/Compiled time exceptions example: IOException, SQLException
 // Unchecked/Runtime exceptions example: ArithmeticException, NullPointerException, ArrayIndexOutOfBoundsException, NumberFormatException
 
-class L27_MyException extends Exception {
-    public L27_MyException(String s) {
-        super(s);
+class L27_MyException extends Throwable {
+    String str;
+    L27_MyException(String s) {
+        str = s;
+    }
+
+    public String toString() {
+        return ("Output string: " + str);
     }
 }
 
