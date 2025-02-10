@@ -93,11 +93,13 @@ public class L27_Exception_Handling {
     private static int printNum(){
         try {
             return 10;
-        } catch (Exception e) {
+        } 
+        catch (Exception e) {
             return 20;
-        } finally {
-            return 30;
-        }
+        } 
+        // finally {
+        //     return 30;
+        // }
     }
 
     private static double divide(int a, int b) throws ArithmeticException, NullPointerException, ArrayIndexOutOfBoundsException {
