@@ -15,8 +15,8 @@ public class L28_Chained_Exceptions {
             System.out.println("Original cause: " + e.getCause());
         }
         
-        try(Scanner sc = new Scanner(System.in)){
-            System.out.println("Enter a number: ");
+        try(Scanner sc = new Scanner(System.in); Scanner sc2 = new Scanner(System.in)) {
+            System.out.print("Enter a number: ");
             int num = sc.nextInt();
             System.out.println("Number: " + num);
         } catch (Exception e) {

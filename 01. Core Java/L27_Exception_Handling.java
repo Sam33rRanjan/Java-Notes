@@ -4,6 +4,17 @@ public class L27_Exception_Handling {
         System.out.println(num);
     }
 
+    // Objects -> Throwable -> Exception, Error
+    // Error: Errors are exceptional scenarios that are out of the scope of application and it's not possible to anticipate and recover from them, for example hardware failure, network connection failure, JVM crash, out of memory error. Caused by environment and resources and application should not try to handle them
+
+    //Components of exception : Name of exception, Description of exception, Stack trace
+    // The method where exception occurs is responsible to create exception object and hand it over to JVM
+    // JVM will check if the method has provided exception handling code or not
+    // If method has provided exception handling code then JVM will hand over the exception object to that code
+    // If method has not provided exception handling code then JVM will terminate the method abruptly and check if the calling method has provided exception handling code or not
+    // This process will continue until the exception object is handled or JVM reaches the top of the call stack(main method) and if exception object is not handled then JVM will terminate the main method abruptly
+    // If the exception object is not handled then JVM will hand over the exception object to default exception handler which will print the exception information on console and terminate the program
+
     public static void main(String[] args) {        
         try {
             int a = 10;
@@ -27,6 +38,9 @@ public class L27_Exception_Handling {
             System.out.println("Number format exception");
         }
 
+        // try with multiple catch block  should be in order of child to parent class
+        // we can write try without catch block but not vice versa 
+        // if we don't have catch block then finally block is mandatory
         try {
             // String str = null;
             String str = "hello";
@@ -41,6 +55,9 @@ public class L27_Exception_Handling {
         }
         catch (Exception e) {
             System.out.println("Other exception");
+        }
+        finally {
+            System.out.println("Finally block");
         }
 
         try {
@@ -61,6 +78,8 @@ public class L27_Exception_Handling {
         try {
             System.out.println(divide(10, 0));
         } catch (ArithmeticException e) {
+            e.printStackTrace();
+            System.out.println(e.toString());
             System.out.println(e.getMessage());
         }
         
@@ -83,7 +102,7 @@ public class L27_Exception_Handling {
 
     private static double divide(int a, int b) throws ArithmeticException, NullPointerException, ArrayIndexOutOfBoundsException {
         if (b == 0) {
-            throw new ArithmeticException("Can't divide by zero");
+            throw new ArithmeticException("Divisor can't be zero");
         }
         return a / b;
     }
@@ -93,14 +112,17 @@ public class L27_Exception_Handling {
     }
 }
 
-
 // We can use "Exception e" instead of specific exception class in catch block to catch all exceptions
 // We can use multiple catch blocks to handle multiple exceptions
 // We can use "finally" block to execute code after try-catch block and the code in finally block will always execute
-// If any method throws compile time exception then it must be handled by using try-catch block or method signature must declare that it throws the exception using "throws" keyword
+// If any method throws checked exception then it must be handled by using try-catch block or method signature must declare that it throws the exception using "throws" keyword
+// Using throws keyword we declare that the method throws an exception and the caller of the method should handle the exception
 
-// Checked/Compiled time exceptions example: IOException, SQLException
-// Unchecked/Runtime exceptions example: ArithmeticException, NullPointerException, ArrayIndexOutOfBoundsException, NumberFormatException
+// Exception methyods: getMessage() prints description of exception, printStackTrace() prints name desc and stack trace, toString() prints name and description of exception
+
+// All exceptions are runtime exceptions
+// Checked/Compiled time exceptions example: IOException, SQLException, ClassNotFoundException, InterruptedException. These exceptions must be handled else code will not compile. These exceptions are checked by compiler.
+// Unchecked/Runtime exceptions example: ArithmeticException, NullPointerException, ArrayIndexOutOfBoundsException, NumberFormatException. These exceptions are not checked by compiler and it's up to the programmer to handle them.
 
 class L27_MyException extends Exception {
     String str;
