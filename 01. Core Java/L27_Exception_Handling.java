@@ -111,6 +111,7 @@ public class L27_Exception_Handling {
 
     private static void throwException() throws L27_MyException {
         throw new L27_MyException("My custom exception");
+        // Throw keyword is used to hand over the exception object to JVM manually
     }
 }
 
