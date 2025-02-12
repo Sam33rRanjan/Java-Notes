@@ -14,6 +14,7 @@ class L17_Child extends L17_Parent {
 // Polymorphism is of two types:
 // 1. Compile-time polymorphism (Method Overloading)
 // 2. Run-time polymorphism (Method Overriding)
+
 public class L17_Polymorphism {
     public static void main(String[] args) {
         L17_Parent p = new L17_Child();

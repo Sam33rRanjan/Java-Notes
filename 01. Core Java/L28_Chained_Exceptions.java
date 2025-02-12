@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class L28_Chained_Exceptions {
     static void exc(){
         NullPointerException e = new NullPointerException("top layer");
-        e.initCause(new ArithmeticException("cause"));
+        e.initCause(new ArithmeticException("actual cause"));
         throw e;
     }
     

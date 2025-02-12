@@ -33,7 +33,7 @@ public class L21_Strings {
         String s4="Good"+"Morning"; // SCP
         String s5=new String("GoodMorning"); // Heap
         String s6=s1+"Morning"; // Heap as s1 is a variable so it is not a constant and value assigned at runtime
-        String s7="Good"+s2; // SCP as s2 is constant and value assigned at compile time
+        String s7="Good"+s2; // SCP as s2 is constant due to final keyword and value assigned at compile time
 
         System.out.println(s3==s4); // true
         System.out.println(s3==s5); // false

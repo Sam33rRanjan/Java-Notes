@@ -36,5 +36,15 @@ public class L19_Interface {
         b.config();
         b.display();
         System.out.println(L19_Base.age);
+
+        L19_Base b2 = new L19_MyClass();
+        b2.show();
+        b2.config();
+        // b2.display(); // Error: display() method is not in L19_Base interface
+
+        L19_Base2 b3 = new L19_MyClass();
+        b3.show();
+        // b3.config(); // Error: config() method is not in L19_Base2 interface
+        b3.display();
     }
 }

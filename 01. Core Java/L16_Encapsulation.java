@@ -1,3 +1,6 @@
+// Encapsulation is a mechanism where you bind your data(variables) and code(methods) together as a single unit.
+// Encapsulation is the process of hiding sensitive data from the user.
+
 class L16_Student {
     private String name;
 

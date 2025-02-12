@@ -23,12 +23,18 @@ class L05_Typecasting {
         long g = (long) e; // double to long
         float h = (float) e; // double to float
         long y = (long) x; // double to long
-
+        
         System.out.println("Explicit Typecasting");
         System.out.println("double to int: " + f);
         System.out.println("double to long: " + g);
         System.out.println("double to float: " + h);
         System.out.println("double to long: " + y);
-
+        
+        float f3=1.0000005E29f;
+        long l2=(long)f3; // float to long
+        System.out.println("float to long: " + l2);
+        int i=(int)f3; // float to int
+        System.out.println("float to int: " + i);
+        
     }
 }

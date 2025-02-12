@@ -21,5 +21,6 @@ public class L20_Wrapper_Class {
 // Wrapper classes are used to convert primitive data types into objects
 // The process of converting primitive data types into objects is called boxing
 // The process of converting objects into primitive data types is called unboxing
-// The classes in Java that represent primitive data types are called wrapper classes
+// The classes in Java that represent a corresponding primitive data types are called wrapper classes
 // The wrapper classes are Byte, Short, Integer, Long, Float, Double, Character, Boolean
+// Wrapper classes are used when operation can only be performed on objects
