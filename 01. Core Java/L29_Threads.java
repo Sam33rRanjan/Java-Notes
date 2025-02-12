@@ -35,5 +35,5 @@ class L29_CustomThread2 implements Runnable {
 // Stages of Thread Life Cycle:
 // 1. New/Born: Thread is created but not started yet. Can be entered by creating an instance of Thread class using new keyword
 // 2. Ready/Runnable: Thread is ready to run and waiting for the CPU cycle. Can be entered by using start() method
-// 3. Running: Thread is currently running. Can be entered by calling run() method
+// 3. Running: Thread is currently running. Can be entered when CPU scheduler selects the thread for execution
 // 4. Dead: Thread has completed its execution. has competed executing run() method or stop() method is called

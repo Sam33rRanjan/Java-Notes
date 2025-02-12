@@ -1,3 +1,8 @@
+// Thread synchronization: It is a mechanism which ensures that two or more concurrent threads do not simultaneously execute
+// It can be achieved by using synchronized keyword, synchronized block, and static synchronization
+// With synchonization we can avoid data inconsistency and thread interference such that only one thread can access the shared resource at a time
+// Its disadvantage is that it reduces the performance of the system
+
 public class L31_Thread_Synchronization {
     public static void main(String[] args) {
         L31_Statements s = new L31_Statements();
