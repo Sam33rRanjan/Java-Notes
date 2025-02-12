@@ -6,7 +6,7 @@ class L02_Operators{
         System.out.println(var1+var2); // 30
         System.out.println(var1-var2); // -10
         System.out.println(var1*var2); // 200
-        System.out.println((float)var1/var2); // 0
+        System.out.println((float)var1/var2); // 0.5
 
         // Unary Operators
         int var3=15;
@@ -20,7 +20,7 @@ class L02_Operators{
         System.out.println(var3); // 15
 
         int var4=6;
-        var4+=5; // var4=var4+5
+        System.out.println(var4+=5); // var4=var4+5
         System.out.println(var4); // 11
 
         boolean b1=true;

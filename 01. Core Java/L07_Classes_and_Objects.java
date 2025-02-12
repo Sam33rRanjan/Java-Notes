@@ -1,5 +1,5 @@
 class L07_Person {
-    // By default the attributes of the class are public
+    // By default the attributes of the class are default
     String name;
     int age;
 

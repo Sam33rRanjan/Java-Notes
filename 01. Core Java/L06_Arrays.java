@@ -64,5 +64,8 @@ class L06_Arrays {
             }
         };
         System.out.println(cube[0][0][0]); // 1
+        System.out.println(cube.length); // 2
+        System.out.println(cube[0].length); // 3
+        System.out.println(cube[0][0].length); // 3
     }
 }
