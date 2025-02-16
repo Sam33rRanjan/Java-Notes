@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class L36_List {
+public class L01_ArrayList {
     public static void main(String[] args) {
         ArrayList<Integer> list = new ArrayList<Integer>();
         list.add(10);
@@ -23,9 +23,20 @@ public class L36_List {
         System.out.println("List after setting 45 at index 4: " + list);
         list.remove(4);
         System.out.println("List after removing element at index 2: " + list);
-        // list.clear(); // Removes all elements from the list.
-        // System.out.println("List after clearing: " + list);
+        
+        // Iterating over the list.
+        Iterator<Integer> itr = list.iterator();
+        while(itr.hasNext()) {
+            System.out.print(itr.next() + " ");
+        }
+        System.out.println();
+
+        list.clear(); // Removes all elements from the list.
+        System.out.println("List after clearing: " + list);
     }
 }
 
 // We can create a list for wrapper classes and not for primitive data types.
+// ArrayList<int> list = new ArrayList<int>(); // This will give compilation error.
+// ArrayList<Integer> list = new ArrayList<Integer>(); // This is correct.
+// Array list is not synchronized.
