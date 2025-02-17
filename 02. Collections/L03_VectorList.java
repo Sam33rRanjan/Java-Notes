@@ -8,6 +8,7 @@ public class L03_VectorList {
         vector.add(20);
         vector.addElement(30);
         vector.addElement(40);
+        vector.add(3,25);
 
         System.out.println("Vector: " + vector);
 
@@ -40,3 +41,4 @@ public class L03_VectorList {
 }
 
 // Vector is synchronized.
+// Vector is used when we have to achieve thread safety.

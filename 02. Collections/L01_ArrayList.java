@@ -7,7 +7,7 @@ public class L01_ArrayList {
         list.add(20);
         list.add(20);
         list.add(30);
-        list.add(40);  
+        list.add(null);  
         list.add(15);
         list.add(25);
         System.out.println("List: " + list);
@@ -36,7 +36,21 @@ public class L01_ArrayList {
     }
 }
 
+// Collection are a group of objects represented as a single entity. It is used to store, retrieve, manipulate and hetrogeneous data.
+// Collection is child of Iterable interface.
+// Collection is an interface and Collections is a class.
+// Collection interface is implemented by List, Set and Queue interfaces.
+// Map interface is not a part of Collection interface but it is a part of Collections class.
+
+// List have three implementations: ArrayList, LinkedList and Vector.
+// Vector has a child stack. Vector and stack are legacy classes.
+// In lists : insertion order is preserved, duplicates are allowed.
 // We can create a list for wrapper classes and not for primitive data types.
+
 // ArrayList<int> list = new ArrayList<int>(); // This will give compilation error.
 // ArrayList<Integer> list = new ArrayList<Integer>(); // This is correct.
+// ArrayList list = new ArrayList(); // This is also correct and we can store heterogeneous data types in this list.
 // Array list is not synchronized.
+// Array list follows of array or growable array data structure.
+// Null insertion is possible and order is preserved.
+// Array list is used when we have to perform more read operations and less write operations.

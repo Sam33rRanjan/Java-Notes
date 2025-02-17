@@ -7,6 +7,8 @@ public class L02_LinkedList {
         list.add(20);
         list.add(20);
         list.add(30);
+        list.add(null);
+        list.add(null);
         list.add(40);
         list.add(3,25);
         System.out.println("Linked List: " + list);
@@ -46,3 +48,6 @@ public class L02_LinkedList {
 }
 
 // Linked list is non-synchronized.
+// Linked list follows doubly linked list data structure.
+// Null insertion is possible and order is preserved.
+// Linked list is used when we have to perform more write operations and less read operations.
