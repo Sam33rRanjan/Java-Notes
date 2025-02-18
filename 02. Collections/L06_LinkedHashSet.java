@@ -26,5 +26,7 @@ public class L06_LinkedHashSet {
     }
 }
 
+// Linked hash set follows hash table and doubly linked list data structure.
+// Duplicate elements are not allowed.
 // Elements are stored in the order in which they are inserted.
 // LinkedHashSet is non-synchronized.

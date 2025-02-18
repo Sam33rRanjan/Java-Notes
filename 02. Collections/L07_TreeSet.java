@@ -28,9 +28,19 @@ public class L07_TreeSet {
         set.remove(45);
         System.out.println("TreeSet after removing 35 and 45: " + set);
 
+        System.out.println("Elements greater or equal to 30: " + set.tailSet(30));
+        System.out.println("Elements smaller than 30: " + set.headSet(30));
+        System.out.println("Elements greater or equal to 20 and smaller than 50: " + set.subSet(20, 50));
+
+        System.out.println("Comparator: " + set.comparator());
+
+        System.out.println("The ceiling of 25: " + set.ceiling(25));
+        System.out.println("The floor of 25: " + set.floor(25));
+
         set.clear();
         System.out.println("TreeSet after clearing: " + set);
     }
 }
 
 // Tree set is non-synchronized.
+// Here we can't store heterogeneous objects.

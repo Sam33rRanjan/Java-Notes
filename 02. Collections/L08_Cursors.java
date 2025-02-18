@@ -1,12 +1,8 @@
-import java.util.Enumeration;
-import java.util.Iterator;
-import java.util.List;
-import java.util.ListIterator;
-import java.util.Vector;
+import java.util.*;
 
 public class L08_Cursors {
     public static void main(String[] args) {
-        Vector vector = new Vector();
+        Vector<Object> vector = new Vector<Object>();
         vector.add(10);
         vector.add(20);
         vector.add(true);
@@ -16,25 +12,25 @@ public class L08_Cursors {
 
         System.out.println("Vector: " + vector);
 
-        Enumeration e = vector.elements();
+        Enumeration<Object> e = vector.elements();
         while(e.hasMoreElements()) {
             System.out.print(e.nextElement() + " ");
         }
         System.out.println();
 
-        Iterator itr = vector.iterator();
+        Iterator<Object> itr = vector.iterator();
         while(itr.hasNext()) {
             System.out.print(itr.next() + " ");
         }
         System.out.println();
 
-        ListIterator litr = vector.listIterator();
+        ListIterator<Object> litr = vector.listIterator();
         while(litr.hasNext()) {
             System.out.print(litr.next() + " ");
         }
         System.out.println();
 
-        ListIterator litr1 = vector.listIterator(vector.size());
+        ListIterator<Object> litr1 = vector.listIterator(vector.size());
         while(litr1.hasPrevious()) {
             System.out.print(litr1.previous() + " ");
         }
