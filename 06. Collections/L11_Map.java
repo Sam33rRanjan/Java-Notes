@@ -9,6 +9,23 @@ public class L11_Map {
         map.put("D", 4);
 
         System.out.println("Map: " + map);
+
+        System.out.println("Value of key 1: " + map.get(1));
+
+        System.out.println("Key 2 exists: " + map.containsKey(2));
+
+        System.out.println("Value B exists: " + map.containsValue("B"));
+
+        System.out.println("Size of map: " + map.size());
+
+        System.out.println("Removing key 2: " + map.remove(2));
+        System.out.println("Map after removing key 2: " + map);
+
+        Iterator<Object> iterator = map.keySet().iterator(); // The type of iterator is of the same type as the key.
+        while (iterator.hasNext()) {
+            Object key = iterator.next();
+            System.out.println("Key: " + key + ", Value: " + map.get(key));
+        }
     }
 }
 
