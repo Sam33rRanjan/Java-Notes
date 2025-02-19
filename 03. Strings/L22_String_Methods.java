@@ -1,12 +1,13 @@
 public class L22_String_Methods {
     public static void main(String[] args) {
-        String name = "John";
+        String name = "JohnJJJ";
         // System.out.println(name.toUpperCase()); // Converts all characters in the string to upper case
         // System.out.println(name.toLowerCase()); // Converts all characters in the string to lower case
         // System.out.println(name.trim()); // Removes leading and trailing spaces 
         // System.out.println(name.substring(2)); // Returns a substring of the string from index 2 to last index
         // System.out.println(name.substring(1, 3)); // Returns a substring of the string from index 1 to 2
         // System.out.println(name.replace('J', 'K')); // Replaces all occurrences of the specified character
+        // System.out.println(name.replaceAll(" ", "")); // Replaces all occurrences of the specified string
         // System.out.println(name.startsWith("Jo")); // Checks if the string starts with the specified prefix
         // System.out.println(name.endsWith("hn")); // Checks if the string ends with the specified suffix
         // System.out.println(name.charAt(2)); // Returns the character at the specified index
