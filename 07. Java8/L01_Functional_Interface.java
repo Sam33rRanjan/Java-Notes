@@ -75,7 +75,8 @@ public class L01_Functional_Interface {
 // They can have default methods, static methods and Object class methods but only one abstract method.
 // @FunctionalInterface annotation is used to ensure that the interface is functional interface.
 // If we try to add more than one abstract method, it will throw compile time error if we use @FunctionalInterface annotation. If we don't use @FunctionalInterface annotation, it will not throw any error.
-// We can use lambda expression to implement the functional interface. Lambda fuctions are functions without name, return type and access modifier.
+// We can use lambda expression to implement the functional interface.
+// Lambda fuctions are functions without name, return type and access modifier.
 
 // Types of functional interfaces:
 // 1. Predicate<T> - It takes one argument and returns boolean value. has methods like test, and, or, negate.
