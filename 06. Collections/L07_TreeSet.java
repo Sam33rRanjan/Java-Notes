@@ -12,6 +12,7 @@ public class L07_TreeSet {
         list.add(10);
 
         set.addAll(list);
+        // set.add(null); // null is not allowed in TreeSet
         System.out.println("TreeSet: " + set);
 
         set.add(35);

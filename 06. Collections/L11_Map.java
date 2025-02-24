@@ -7,6 +7,8 @@ public class L11_Map {
         map.put(1, "A");
         map.put(2, "B");
         map.put("D", 4);
+        map.put(null, 4);
+        map.put(null, 5);
 
         System.out.println("Map: " + map);
 
