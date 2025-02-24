@@ -51,8 +51,8 @@ public class L01_Functional_Interface {
         Predicate<Integer> p = i -> i > 5;
         System.out.println(p.test(4));
 
-        Predicate<ArrayList> p1 = i -> i.isEmpty();
-        ArrayList al = new ArrayList<>();
+        Predicate<ArrayList<Object>> p1 = i -> i.isEmpty();
+        ArrayList<Object> al = new ArrayList<>();
         System.out.println(p1.test(al));
         
         // Runnable r = () -> System.out.println("Hello"); // Lambda expression
