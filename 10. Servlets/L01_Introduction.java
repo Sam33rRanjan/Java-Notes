@@ -26,3 +26,16 @@ public class L01_Introduction {
 // 1. init(): This method is called only once in the life cycle of the servlet. It is used to initialize the servlet.
 // 2. service(): This method is called every time when the client request is made. It is used to handle the client request.
 // 3. destroy(): This method is called only once in the life cycle of the servlet. It is used to destroy the servlet.
+
+// HTTP Servlet Methods:
+// 1. GET: Retrieve data from the server.
+// 2. POST: Send new data to the server.
+// 3. PUT: Update data on the server.
+// 4. DELETE: Delete data from the server.
+
+// API: Application Programming Interface
+// REST API: Representational State Transfer API
+// REST API follows REST principles i.e. it uses only HTTP methods to perform operations.
+// Characteristics of REST API:
+// 1. Stateless: Each request from the client to the server must contain all the information required to understand the request i.e. the application does not store any information about the client session on the server.
+// 2. Client-Server: Client and server are independent of each other.
